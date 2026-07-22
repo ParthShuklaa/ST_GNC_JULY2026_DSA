@@ -1,4 +1,29 @@
 //binary tree demo
+
+Algorithm: InorderTraversal(root)
+
+Step 1: Create an empty result list
+
+Step 2: Call Inorder(root)
+
+Step 3: Return the result list
+
+
+Procedure Inorder(node)
+
+    If node is NULL
+        Return
+
+    Traverse the left subtree
+        Inorder(node.left)
+
+    Visit the current node
+        Store node.value in the result list
+
+    Traverse the right subtree
+        Inorder(node.right)
+
+End Procedure
 //step1: we are going to create a binary tree and perform inorder traversal on it
 //step2: we will create a structure for the binary tree node, which will have data, left and right pointers
 //step3: we will create a function to create a new node, which will take an integer value as input and return a pointer to the new node
